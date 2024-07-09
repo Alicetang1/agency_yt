@@ -17,8 +17,10 @@
         "name": "next"
       }
     ],
+    
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@heroicons/react/*": ["node_modules/@heroicons/react/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
