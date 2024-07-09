@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 const ResponsiveNav = () => {
 
-  const [showNav,setShowNav ] = useState(false);
+  const [showNav,setShowNav] = useState(false);
   const showNavHandler =()=> setShowNav(true);
   const closeNavHandler =()=>setShowNav(false);
 

@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonBlue from '../Button/ButtonBlue'
 import ButtonRed from '../Button/ButtonRed'
 import { Bars3BottomRightIcon } from '@heroicons/react/20/solid';
+import Link from '@/node_modules/next/link';
 
 interface Props{
   openNav: ()=> void;
@@ -19,19 +20,19 @@ const Nav = ({openNav}:Props) => {
         </h1>
         <ul className='hidden lg:flex items-center space-x-10'>
           <li className='text-[17px] cursor-pointer text-red-500'>
-            <link rel="stylesheet" href="/" /> Home
+            <Link href="/"> Home</Link>
           </li>
           <li className='text-[17px] cursor-pointer hover:text-red-500 transition-all duration-200'>
-            <link rel="stylesheet" href="/" /> About
+            <Link href="/"> About</Link>
           </li>
           <li className='text-[17px] cursor-pointer  hover:text-red-500  transition-all duration-200'>
-            <link rel="stylesheet" href="/" /> Services
+            <Link href="/"> Services</Link>
           </li>
           <li className='text-[17px] cursor-pointer  hover:text-red-500  transition-all duration-200'>
-            <link rel="stylesheet" href="/" /> Customer
+            <Link href="/"> Customer</Link>
           </li>
           <li className='text-[17px] cursor-pointer  hover:text-red-500  transition-all duration-200'>
-            <link rel="stylesheet" href="/" /> Bolg
+            <Link href="/"> Bolg</Link>
           </li>
 
         </ul>
@@ -39,7 +40,7 @@ const Nav = ({openNav}:Props) => {
           <ButtonBlue text="Login"/> 
           <ButtonRed text="Sign Up"/> 
           <Bars3BottomRightIcon 
-           onclick={openNav}
+           onClick={openNav}
            className="w-[1.5rem] lg:hidden h-[1.5rem] text-slate-900 cursor-pointer" />
           
         </div>
